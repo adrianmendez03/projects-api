@@ -11,14 +11,15 @@ const app = express()
 
 // OTHER IMPORTS
 const morgan = require('morgan')
+const projectController = require('./controllers/project')
 
 // MIDDLEWARE
 app.use(cors())
 app.use(express.json())
 app.use(morgan('tiny'))
+app.get('/projects', projectController)
 
 // ROUTES AND ROUTERS
-//
 
 // Default Route
 app.get('/', (req, res) => {
