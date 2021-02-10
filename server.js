@@ -18,6 +18,7 @@ app.use(express.json())
 app.use(morgan('tiny'))
 
 // ROUTES AND ROUTERS
+//
 
 // Default Route
 app.get('/', (req, res) => {
