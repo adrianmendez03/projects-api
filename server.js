@@ -17,7 +17,7 @@ const projectController = require('./controllers/project')
 app.use(cors())
 app.use(express.json())
 app.use(morgan('tiny'))
-app.get('/projects', projectController)
+app.use('/projects', projectController)
 
 // ROUTES AND ROUTERS
 
