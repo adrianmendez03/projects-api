@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
     res.json(await Project.create(req.body))
 })
 
-router.put('/', async (req, res) => {
+router.put('/:id', async (req, res) => {
     res.json(
         await Project.findByIdAndUpdate(
             req.params.id,
