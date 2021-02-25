@@ -1,5 +1,6 @@
 // ENVIROMENT VARIABLES
 require('dotenv').config()
+require('newrelic')
 const { PORT = 3000, NODE_ENV = "developement" } = process.env
 
 // MONGOOSE
