@@ -3,3 +3,5 @@ env.yaml
 .env
 development.yaml
 production.yaml
+newrelic.js
+newrelic_agent.log
