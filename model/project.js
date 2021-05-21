@@ -3,7 +3,8 @@ const { Schema, model } = require('mongoose')
 const projectSchema = new Schema({
     name: { type: String, required: true },
     frontend: { type: String, required: true },
-    backend: { type: String, required: true },
+    server: { type: String, required: true },
+    database: { type: String, required: true },
     image: { type: String, required: true },
     description: { type: String, required: true },
     repo: { type: String, required: true },
